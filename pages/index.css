@@ -1,0 +1,167 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+.content {
+  padding: 0 20px;
+}
+
+.page {
+  background-color: #fcf5e5;
+  min-height: 100vh;
+}
+
+.page__section {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  width: 94px;
+  height: 26px;
+}
+
+.profile {
+  display: flex;
+  padding: 34px 0 20px;
+  border-bottom: 1px #212121 solid;
+}
+
+.profile__avatar {
+  margin-right: 20px;
+}
+
+.profile__name {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0 0 12px;
+  color: #212121;
+}
+
+.profile__description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #212121;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.profile__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__edit-btn {
+  background: none;
+  border: none;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  opacity: 0.7;
+  margin-top: auto;
+  color: #212121;
+}
+
+.profile__pencil_icon {
+  margin: 0 8px 0 0;
+}
+
+.profile__add-btn {
+  margin-left: auto;
+  width: 149px;
+  height: 52px;
+  margin-top: auto;
+  border-radius: 8px;
+  border: none;
+  background-color: #212121;
+  color: #fcf5e5;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.profile__plus_icon {
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+}
+
+.profile__avatar {
+  border-radius: 8px;
+}
+
+.card {
+  max-width: 413px;
+  height: 445px;
+}
+
+.card__image {
+  height: 413px;
+  width: 413px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.card__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 12px 0 0;
+}
+
+.cards {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px #212121 solid;
+}
+
+.cards__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 413px);
+  justify-content: center;
+  gap: 40px 20px;
+}
+
+.card__like-btn {
+  background-image: url(../images/like.svg);
+  width: 23px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  opacity: 0.4;
+}
+
+.card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  margin: 60px auto;
+}
+
+.footer__copyright {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+}
