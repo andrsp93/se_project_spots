@@ -12,6 +12,9 @@
   font-size: 20px;
   line-height: 24px;
   margin: 12px 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card__like-btn {
@@ -21,6 +24,12 @@
   border: none;
   background-color: transparent;
   opacity: 0.4;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.card__like-btn:hover {
+  opacity: 1;
 }
 
 .card__content {
