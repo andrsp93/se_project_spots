@@ -94,7 +94,7 @@
 .button_type_add {
   width: 12px;
   height: 12px;
-  margin: 0 8px;
+  margin: 0 8px 0 0;
 }
 
 @media screen and (max-width: 627px) {
