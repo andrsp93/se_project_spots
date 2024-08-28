@@ -1,7 +1,7 @@
 .profile {
   display: flex;
   padding: 34px 0 20px;
-  border-bottom: 1px #212121 solid;
+  border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
 
 .profile__avatar {
@@ -67,7 +67,7 @@
   opacity: 1;
 }
 
-.profile__pencil_icon {
+.button_type_icon {
   margin: 0 8px 0 0;
 }
 
@@ -88,10 +88,10 @@
 }
 
 .profile__add-btn:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
-.profile__plus_icon {
+.button_type_add {
   width: 12px;
   height: 12px;
   margin: 0 8px;
@@ -120,7 +120,6 @@
 
   .profile__description {
     margin: 0 0 32px;
-    font-size: 16px;
     max-width: 288px;
   }
 
@@ -129,11 +128,18 @@
   }
 
   .profile__edit-btn {
-    text-align: center;
+    margin: auto;
+    padding: 0 8px 0 0;
   }
 
   .profile__add-btn {
     margin: 0;
     width: 100%;
+    padding: 0 8px 0 0;
+  }
+
+  .button_type_add {
+    width: 12px;
+    height: 12px;
   }
 }
