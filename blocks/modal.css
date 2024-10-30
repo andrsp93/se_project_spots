@@ -12,6 +12,7 @@
   visibility: hidden;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  padding: 0 16px;
 }
 
 .modal__opened {
@@ -94,4 +95,37 @@
 
 .modal__submit-btn:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 627px) {
+  .modal {
+    padding: 0 10px;
+  }
+
+  .modal__container {
+    padding: 12px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+    line-height: 1;
+    margin: 10px 0 24px;
+  }
+
+  .modal__close-btn {
+    top: 12px;
+    right: 12px;
+  }
+
+  .modal__label {
+    margin-bottom: 24px;
+  }
+
+  .modal__input {
+    font-size: 16px;
+  }
+
+  .modal__submit-btn {
+    width: 100%;
+  }
 }
