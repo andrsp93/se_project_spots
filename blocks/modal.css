@@ -29,6 +29,26 @@
   border-radius: 8px;
 }
 
+.modal__container_type_preview {
+  padding: 0;
+  background-color: transparent;
+}
+
+.modal__image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.modal__caption {
+  background-color: #212121;
+  position: absolute;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
 .modal__close-btn {
   background-image: url(../images/close.svg);
   background-size: contain;
@@ -42,6 +62,12 @@
   height: 40px;
   cursor: pointer;
   opacity: 0.4;
+}
+
+.modal__close-btn_type_preview {
+  background-image: url(../images/close-light.svg);
+  top: 0;
+  right: -42.5px;
 }
 
 .modal__close-btn:hover {
