@@ -13,10 +13,14 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   padding: 0 16px;
+  opacity: 0;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
 
 .modal_opened {
   visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
 }
 
 .modal__container {
@@ -153,5 +157,26 @@
 
   .modal__submit-btn {
     width: 100%;
+  }
+
+  .modal__image {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .modal__caption {
+    background-color: #212121;
+    position: absolute;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .modal__close-btn_type_preview {
+    background-image: url(../images/close-light.svg);
+    top: -35px;
+    right: 10px;
   }
 }
