@@ -142,6 +142,25 @@ imageModalCloseBtn.addEventListener("click", () => {
   closeModal(imageModal);
 });
 
+const exitModal = () => {
+  const modals = document.querySelectorAll(".modal");
+  modals.forEach((modal) => {
+    modal.addEventListener("click", (evt) => {
+      if (evt.target === modal) {
+        closeModal(modal);
+      }
+    });
+  });
+
+  document.addEventListener("keydown", (evt) => {
+    if (evt.key === "Escape") {
+      modals.forEach((modal) => {
+        closeModal(modal);
+      });
+    }
+  });
+};
+
 editFormElement.addEventListener("submit", handleEditFormSubmit);
 addCardForm.addEventListener("submit", handleAddCardSubmit);
 
@@ -149,3 +168,5 @@ initialCards.forEach((item) => {
   const cardElement = getCardElement(item);
   cardsList.prepend(cardElement);
 });
+
+exitModal();
